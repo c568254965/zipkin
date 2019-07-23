@@ -6,12 +6,25 @@ management:
       server:
         auto-time-requests: false
 spring:
+  profiles:
+    active: dev
+zipkin2:
+  storage:
+    StorageComponent: elasticsearch
+    type: elasticsearch
+    elasticsearch:
+      cluster: es-from-csrr
+      hosts: http://locahlhost:9200
+      index: csrr-zipkin
+      index-shards: 5
+      index-replicas: 1
 
 ---
 spring:
   profiles: test
-zipkin:
+zipkin2:
   storage:
+    StorageComponent: elasticsearch
     type: elasticsearch
     elasticsearch:
       cluster: es-from-csrr
