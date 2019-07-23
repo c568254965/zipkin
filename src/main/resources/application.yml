@@ -1,0 +1,21 @@
+server:
+  port: 6866
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+spring:
+
+---
+spring:
+  profiles: test
+zipkin:
+  storage:
+    type: elasticsearch
+    elasticsearch:
+      cluster: es-from-csrr
+      hosts: http://140.143.227.51:9200
+      index: csrr-zipkin
+      index-shards: 5
+      index-replicas: 1
