@@ -8,7 +8,7 @@ management:
 spring:
   profiles:
     active: dev
-zipkin2:
+zipkin:
   storage:
     StorageComponent: elasticsearch
     type: elasticsearch
@@ -22,7 +22,8 @@ zipkin2:
 ---
 spring:
   profiles: test
-zipkin2:
+
+zipkin:
   storage:
     StorageComponent: elasticsearch
     type: elasticsearch
