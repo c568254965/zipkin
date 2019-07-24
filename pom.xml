@@ -31,13 +31,19 @@
 
         <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-storage-elasticsearch -->
         <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-storage-elasticsearch-http -->
+        <!--<dependency>-->
+            <!--<groupId>io.zipkin.java</groupId>-->
+            <!--<artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>-->
+            <!--<version>1.14.3</version>-->
+        <!--</dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/io.zipkin.java/zipkin-autoconfigure-storage-elasticsearch -->
         <dependency>
             <groupId>io.zipkin.java</groupId>
-            <artifactId>zipkin-autoconfigure-storage-elasticsearch-http</artifactId>
-            <version>1.14.3</version>
+            <artifactId>zipkin-autoconfigure-storage-elasticsearch</artifactId>
+            <version>2.12.9</version>
         </dependency>
-
-
 
 
     </dependencies>
