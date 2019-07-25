@@ -14,7 +14,7 @@ import zipkin.server.internal.EnableZipkinServer;
 @SpringBootApplication
 @EnableAutoConfiguration
 @EnableZipkinServer
-@EnableConfigServer
+//@EnableConfigServer
 @EnableHystrixDashboard
 @EnableEurekaClient
 @EnableTurbine
